@@ -1,0 +1,291 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<title>Requested Information Not Found</title>
+	<link rel="stylesheet" href="/stylesheets/fec_sitestyles.css" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/fec_apps.css" type="text/css" />
+	
+	    
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+</head>
+<body>
+<script src="/app_javascript/jquery/jquery-1.10.2.min.js"></script>
+<script src="/app_javascript/jquery/jquery-migrate-1.2.1.min.js"></script>
+
+
+</body>
+</html> 
+</head>
+<body>
+
+    
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+</head>
+<body>
+<!-- Banner -->
+<div id="banner">
+		<div class="title">Try out <a href="https://beta.fec.gov/">betaFEC</a></div>
+		<div class="subtitle">With new tools for viewing campaign finance data.</div>	
+</div>
+<div id="fec_logoArea">
+	<a href="/"><img src="/images/fec_corner_logo.gif" alt="Federal Election Commission, United States of America (logo). Link to FEC Home Page" width="159" height="221" border="0"></a>
+</div>
+
+<div id="fec_nameArea">
+	<img src="/images/fec_name.gif" alt="Federal Election Commission" width="357" height="66" border="0">
+</div>
+
+<div id="topNav">
+	<ul>
+		<li /><a href="/about.shtml">About the FEC</a>
+		<li /><a href="/press/press.shtml">Press Office</a>
+		<li /><a href="/ans/answers.shtml">Quick Answers</a>
+		<li /><a href="/pages/contact.shtml">Contact Us</a>
+		<li /><a href="/sitemap.shtml">Site Map</a>
+	</ul>
+</div>
+
+<div id="fec_mainToolbar">
+	<!-- top navigation cascading menu will appear in this area -->
+	<div class="fec_searchForm">
+	<form action="http://search04.fec.gov/vivisimo/cgi-bin/query-meta"><font color="white"><strong>FEC Search</strong></font>
+			<input name="query" />
+			<input type="hidden" name="v:project" value="fec_search_02_prj" />
+			<span class="fec_submitBtn">
+					<input type="image" src="/images/btn_search.png" alt="Search button" id="fec_submitBtn">
+			</span>
+	</form> 
+	</div>
+</div>
+<div id="fec_skipNav">
+	<a href="#content">Skip Navigation</a>
+</div>
+
+</body>
+</html> 
+	
+<div id="breadcrumbs">
+ <a href="/index.shtml">HOME</a> 
+ / <a href="/pindex.shtml">CAMPAIGN FINANCE DISCLOSURE PORTAL</a>
+ / <a href="/finance/disclosure/candcmte_info.shtml">CANDIDATE AND COMMITTEE VIEWER</a>
+ / <span class="breadcrumbs_curPage">REQUESTED INFORMATION NOT FOUND</span>
+
+</div>
+
+    
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+</head>
+<body>
+<link rel="stylesheet" href="/stylesheets/p_left_menu.css" type="text/css" />
+<script type="text/javascript" src="/app_javascript/leftmenu.js"></script>
+<div>
+	<div class="left_menu_right_border"></div>
+	<div class="left_menu_bottom_border"></div>
+</div>
+<div class="leftsection">
+<ul id="leftmenu" class="collapsible">
+	<li id="datacatalog">
+		<a class="head" href="#"><img border="0" style="vertical-align:middle" alt="Data Catalog" src="/images/menus/leftmenu/database.png"></img>&nbsp;Data Catalog</a>
+		<ul class="acitem oneleftpadding">
+			<li><a class="menu_item" href="/data/DataCatalog.do?format=html" id="dc">&nbsp;Data Catalog Home</a></li>
+			<li><a class="menu_item" href="/data/AdminFine.do?format=html" id="af"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Administrative Fines</a></li>
+			<li><a class="menu_item" href="/data/LobbyistBundle.do?format=html" id="lb"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Bundled Contributions</a></li>
+			<li><a class="menu_item" href="/data/CampaignAndCommitteeSummary.do?format=html" id="ccs"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Committee Report <br>&nbsp;Summary</a></li>
+			<li><a class="menu_item" href="/data/CandidateDisbursement.do?format=html" id="cd"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Candidate <br>&nbsp;Disbursements</a></li>
+			<li><a class="menu_item" href="/data/CandidateSummary.do?format=html" id="cds"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Candidate Summary</a></li>
+			<li><a class="menu_item" href="/data/CommitteeSummary.do?format=html" id="cms"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Committee Summary</a></li>
+			<li><a class="menu_item" href="/data/CommunicationCosts.do?format=html" id="cc">&nbsp;Communication Costs</a></li>
+			<li><a class="menu_item" href="/data/EnhancedElectioneeringCommunications.do?format=html" id="ec">&nbsp;Electioneering<br>&nbsp;Communications</a></li> 
+			<li><a class="menu_item" href="/data/IndependentExpenditure.do?format=html" id="ie"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Independent<br>&nbsp;Expenditures</a></li>
+			<li><a class="menu_item" href="/data/Leadership.do?format=html" id="ls"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Leadership PACs <br>&nbsp;and Sponsors</a></li>
+			<li><a class="menu_item" href="/data/Lobbyist.do?format=html" id="lo"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;Lobbyist/Registrant</a></li>
+			<li><a class="menu_item" href="/data/Form1Filer.do?format=html" id="f1f">&nbsp;New Committee<br/>&nbsp;Registrations</a></li>
+			<li><a class="menu_item" href="/data/Form2Filer.do?format=html" id="f2f">&nbsp;New Statements<br/>&nbsp;of Candidacy</a></li>
+			<li><a class="menu_item" href="/data/UnverifiedCommittees.do?format=html" id="uc">&nbsp;Unverified<br>&nbsp;Filers</a></li> 
+		</ul> 
+	</li>
+	<li id="maps">
+		<a class="head" href="#">
+		<img border="0" style="vertical-align:middle" alt="Maps" src="/images/menus/leftmenu/usa_map.png"></img>&nbsp;Maps</a>
+		<ul class="acitem oneleftpadding">
+			<li><a class="menu_item" href="/disclosurep/pnational.do" id="p"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>--><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/p.png"></img> -->&nbsp;Presidential</a></li>
+			<li><a class="menu_item" href="/disclosurehs/hsnational.do" id="hs"><!-- <img border="0" style="vertical-align:middle" src="images/menus/	leftmenu/arrow.png"></img>--><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/hs.png"></img>-->&nbsp;House &amp; Senate</a></li>
+			<li><a class="menu_item" href="/disclosureie/ienational.do" id="hien">&nbsp;House Independent<br>&nbsp;Expenditures</a></li>
+			<li><a class="menu_item" href="/disclosureie/ienational.do?candOffice=S" id="sien">&nbsp;Senate Independent<br>&nbsp;Expenditures</a></li>
+			<!--<li id="os"><a class="sub_menu_head menu_item" href="javascript:void(0);">&nbsp;Outside Spending</a>
+				<ul class="acitem oneleftpadding">
+					<li><a class="menu_item" href="/disclosureie/ienational.do" id="ien">&nbsp;House Independent<br>&nbsp;Expenditures</a></li>
+				</ul> 			
+			</li>-->
+		</ul> 
+	</li>
+	<li id="charts">
+		<a class="head" href="#">
+		<img border="0" style="vertical-align:middle" alt="Charts" src="/images/menus/leftmenu/charts.png"></img>&nbsp;Charts</a>
+		<ul class="acitem oneleftpadding">
+			<li><a class="menu_item" href="/disclosure/pacSummary.do" id="pac"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;PACs</a></li>
+			<li><a class="menu_item" href="/disclosure/partySummary.do" id="pty"><!-- <img border="0" style="vertical-align:middle" src="images/menus/leftmenu/arrow.png"></img>-->&nbsp;National Parties</a></li>
+		</ul> 
+	</li>
+	<li id="search">
+		<a class="head" href="#">
+		<img border="0" style="vertical-align:middle" alt="Search" src="/images/menus/leftmenu/search_thumb.png"></img>&nbsp;Search</a>
+		<ul class="acitem oneleftpadding">
+			<li><a class="menu_item" href="/finance/disclosure/candcmte_info.shtml" id="ccv">&nbsp;Candidate & Committee <br>&nbsp;Viewer</a></li>
+            <li><a class="menu_item" href="/data/index.jsp" id="pac">&nbsp;Data Catalog</a></li>
+			
+			
+			<li><a class="menu_item" href="http://efilingapps.fec.gov/rss/display?input" id="rss">&nbsp;Electronic Filing RSS Feed</a></li>
+            <li><a class="menu_item" href="http://www.fec.gov/finance/disclosure/ie_reports.shtml" id="ie">&nbsp;Independent<br>&nbsp;Expenditure Search</a></li>
+			
+			<li><a class="menu_item" href="http://www.fec.gov/finance/disclosure/norindsea.shtml" id="ie">&nbsp;Individual<br>&nbsp;Contribution Search</a></li>
+			
+		</ul> 
+	</li>
+	<li id="download">
+		<a class="head" href="#">
+		<img border="0" style="vertical-align:middle;" alt="Download" src="/images/menus/leftmenu/download_thumb.png"></img>&nbsp;Download</a>
+		<ul class="acitem oneleftpadding">
+			<li><a class="menu_item" href="/data/index.jsp" id="dc">&nbsp;Data Catalog</a></li>
+			<li><a class="menu_item" target="ftp_download" href="http://www.fec.gov/finance/disclosure/ftp_download.shtml" id="ftp">&nbsp;Larger Data Sets</a></li>
+			<li><a class="menu_item" target="electioneering" href="http://www.fec.gov/finance/disclosure/electioneering.shtml" id="ec">&nbsp;Electioneering<br>&nbsp;Communications</a></li>
+			<li><a class="menu_item" target="2012matching" href="http://www.fec.gov/finance/2012matching/2012matching.shtml" id="pm">&nbsp;Presidential Matching<br>&nbsp;Funds Submissions</a></li>
+			<li><a class="menu_item" target="ftpdet" href="http://www.fec.gov/finance/disclosure/ftpdet.shtml" id="df">&nbsp;Contribution Files</a></li>
+			<li><a class="menu_item" target="ftpsum" href="http://www.fec.gov/finance/disclosure/ftpsum.shtml" id="sf">&nbsp;Campaign Summaries</a></li>
+			<li><a class="menu_item" target="ftpefile" href="http://www.fec.gov/finance/disclosure/ftpefile.shtml" id="ef">&nbsp;Electronically Filed<br>&nbsp;Reports (.FEC files)</a></li>
+		</ul> 
+	</li>
+</ul>
+</div>
+
+</body>
+</html> 
+<div id="app_header_1"><a name="content"></a>
+	<h1>Requested Information Not Found</h1>
+</div>
+<div id="app_main_content">
+
+<table width="100%" class="app_TableNav">
+	<tr><td><div style="clear:both; height:20px;"></div></td></tr>
+	<tr>
+		<td style="width:100%">
+			<table width="100%" border="0" class="app_TableNav">
+				<tr>
+					<td class="table-content-left">
+						We&#39;re sorry we were unable to process your request.  Please try again.  If you need help, please contact the Public Records Office at (202) 694-1120 and our staff will assist you during normal business hours. Members of the media, please contact the Press Office at (202) 694-1220.				
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr><td><div style="clear:both; height:100px;"></div></td></tr>
+</table>
+</div>
+
+
+    
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+</head>
+<body>
+<div id="fec_footer">
+
+	<div class="fec_footerLinks">
+	
+		<!-- Verdana Bold 10/12 gray, hover underline -->
+	
+		<ul>
+		<nofollow>
+		<li><a href="/general/whatsnew.shtml" title="What&#0146;s New on FEC.gov" accesskey="n">What&#0146;s New</a>
+		<li><a href="/general/library.shtml" title="FEC Publications and Forms">Library</a>
+<li><a href="/press/foia.shtml" title="Freedom of Information Act">FOIA</a>
+		<li><a href="http://www.usa.gov/" title="Official information and services from the U.S. government">USA.gov</a>
+		<li><a href="/privacy.shtml" title="FEC.gov Privacy Policy">Privacy</a>
+		<li><a href="/links_files/Links.shtml" title="Links to Election-Related Web Sites">Links</a>
+		<li><a href="/elecfil/electron.shtml" title="Electronic Filing">eFiling</a>
+		<li><a href="/fecig/fecig.shtml" title="The National Mail Voter Registration Form">Inspector General</a>
+		<li><a href="/eeo/NoFear.shtml" title="No Fear Act">No Fear Act</a>
+        <li><a href="/info/fecmaill.shtml"><img src="/images/envelope.jpg" alt=" " width="15" height="10" border="0"></a>	<a href="/info/fecmaill.shtml">Subscribe</a>	        
+		</nofollow>
+		</ul>
+  </div>
+
+	<div class="fec_footerInfo">
+	
+		<!-- Verdana 9/11 -->
+		<!-- link: bold, red, hover underline -->
+		
+	  <p>Federal Election Commission, 999 E Street, NW, 
+		Washington, DC 20463 (800) 424-9530 
+		In Washington (202) 694-1000<br>   
+		For the hearing impaired, TTY (202) 219-3336
+		Send comments and suggestions about this site to the <a href="/about/offices/CIO/webmanager/webmanager.shtml">web manager</a>.</p>
+	
+	</div>
+	
+  <script type="text/javascript"> 
+    var _gaq = _gaq || []; 
+    _gaq.push(['_setAccount', 'UA-16134356-1']); 
+    _gaq.push(['_trackPageview']); 
+    (function() { 
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+    })(); 
+  </script> 
+
+<!-- Google Website Optimizer tracking script -->
+ <script type="text/javascript"> 
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+ </script>
+ <script type="text/javascript"> 
+  try{
+   var gwoTracker = _gat._getTracker("UA-16134356-1"); 
+   gwoTracker._trackPageview(); 
+  } catch(err) {}
+ </script>
+
+
+</div>
+
+</body>
+</html> 
+</body>
+</html>
