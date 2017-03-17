@@ -6,7 +6,7 @@
 # 2.) Ensure all packages have been installed.
 
 # ===========================================================================================
-# Loading Data & Preliminary Cleaning
+# Load Libraries & Working Directory
 # ===========================================================================================
 
 # load packages
@@ -15,16 +15,21 @@ library(httr)
 library(jsonlite)
 library(tidyverse)
 
-# load customizable variables
-cperson <- "Johnson" # identify candidate
-setwd() # set the working directory in code
-candidateCommitteeId <- "C00497842"
+# set the working directory
+setwd()
 
+# ===========================================================================================
+# Build the Function
+# ===========================================================================================
+
+fec_extract <- function(cperson, candidateCommitteeId){ # wrap the process in a function
 dfCmt <- data.frame(
   "cont_type" = c(rep("Itemized Individual Contributions", 5), rep("Other Committees Contributions", 5)),
   "abbrev" = c(rep("II", 5), rep("OC", 5)),
   "lnnum" = c(rep("F3X#11AI", 5), rep("F3X#11C", 5)),
   "year" = c(rep(c("2008", "2010", "2012", "2014", "2016"), 2)))
+
+dir.create(cperson)
 
 for (i in 1:length(dfCmt$cont_type)) {
   electionYear = dfCmt$year[i]
@@ -62,11 +67,11 @@ for (i in 1:length(dfCmt$cont_type)) {
                    commingFrom = "twoYearSummary", # permanent
                    format = "csv"), # permanent
        encode = "form") -> res_2
-  writeBin(res_2$content, paste0(dfCmt$abbrev[i], "_", dfCmt$year[i], ".csv"))
+  writeBin(res_2$content, paste0(cperson, "/", dfCmt$abbrev[i], "_", dfCmt$year[i], ".csv"))
 }
 
 # compile list of csv's to merge
-files <- list.files() # identify files in the same folder
+files <- list.files(cperson) # identify files in the same folder
 files <- files[!grepl("Contributions", files)] # exclude contribution files
 files <- files[grep('[0-9]{4}.csv', files)] # get the names of the csv files
 
@@ -80,10 +85,10 @@ OC <- data.frame()
 
 # merge the files
 for (i in 1:length(files)) {
-  if(ncol(read.csv(files[i], skip = 7)) == 18) {
-    II <- rbind(II, read.csv(files[i], skip =7))
-  } else if(ncol(read.csv(files[i], skip = 7)) == 16) {
-    OC <- rbind(OC, read.csv(files[i], skip =7))
+  if(ncol(read.csv(paste0(cperson, "/", files[i]), skip = 7)) == 18) {
+    II <- rbind(II, read.csv(paste0(cperson, "/", files[i]), skip =7))
+  } else if(ncol(read.csv(paste0(cperson, "/", files[i]), skip = 7)) == 16) {
+    OC <- rbind(OC, read.csv(paste0(cperson, "/", files[i]), skip =7))
   } 
 }
 
@@ -121,4 +126,16 @@ colnames(merged) <- c("Contributor Name","Employer","Occupation","Description","
 # ===========================================================================================
 
 # export a csv
-write.csv(merged, paste(cperson, " - Leadership Contributions.csv"), row.names = FALSE)
+write.csv(merged, paste0(cperson, "/", cperson, " - Leadership Contributions.csv"), row.names = FALSE)
+}
+
+# ===========================================================================================
+# Run the Function
+# ===========================================================================================
+
+# The function needs two variables to work properly:
+
+# 1.) cperson: This is just the name of congressperson. This variable is purely aesthetic.
+# 2.) candidateCommitteeId: This is the exact ID of the committee we're pulling files from. 
+
+fec_extract("Collins", "C00391797") 
