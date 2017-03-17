@@ -1,4 +1,4 @@
-# FEC-Export
+# FEC Contribution Data Download & Merge
 This is a simple script that downloads "Itemized Individual Contributions" and "Other Campaign Contributions" data from the Federal Election Comission (FEC) from 2008 to 2016 and merges the exports into a singular CSV file to be used for analysis. Specifically,  the script exports a file 
 
 ## Script Purpose
