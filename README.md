@@ -16,9 +16,9 @@ The example used in the script is Senator Susan Collins' Leadership Political Ac
 
 ## Thoughts on Improvemnts and Other Considerations
 
-As of now, the script is semi-inflexible. The script has a singular hard-input of the committee ID and is used to specifically download and merge the "Itemized Individual Contributions" and "Other Campaign Contributions" sections. That being said,  
+As of now, the script is semi-inflexible. The script has a singular hard-input of the committee ID and is used to specifically download and merge the "Itemized Individual Contributions" and "Other Campaign Contributions" sections. That being said, the script can be easily rewritten to cater to different types of FEC exports.
 
 There are multiple potential improvements to the code:
-1. Remove the individual-specific folder and extraneous CSV files. 
-2. Build an instruction CSV, allowing individuals to aggregate folder names and committee ID's to make the script big-data compatable. 
+1. Remove the individual-specific folder and extraneous CSV files from the merging process. 
+2. Build an "instruction" CSV, allowing individuals to aggregate folder names and committee ID's to make the script big-data compatable. 
 3. Create an option to allow individuals to customize the year range used.
