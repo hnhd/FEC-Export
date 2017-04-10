@@ -1,33 +1,20 @@
 # ===========================================================================================
-# Troubleshooting & Prelimnary Informaton
-# ===========================================================================================
-
-# 1.) Set working directory to the file where the csvs are located.
-# 2.) Ensure all packages have been installed.
-
-# ===========================================================================================
-# Load Libraries & Working Directory
+# Load Libraries
 # ===========================================================================================
 
 # load packages
 library(gtools) # needed for smartbind
-library(httr)
-library(jsonlite)
+library(httr) # needed for POST commands
+library(jsonlite) # needed to manipulate JSON data
 library(tidyverse)
-
-# set the working directory
-setwd()
-
-# create folders
-dir.create('Leadership')
-dir.create('Campaign')
-dir.create('Final')
 
 # ===========================================================================================
 # Build the Functions
 # ===========================================================================================
   
-fec_lead_extract <- function(cperson, candCmteNameMn, candidateCommitteeId){ # wrap the process in a function
+# The following code writes the functions that will be used to extract and download the data.
+
+fec_lead_extract <- function(cperson, candCmteNameMn, candidateCommitteeId){
 dfCmt <- data.frame(
   "cont_type" = c(rep("Itemized Individual Contributions", 6), rep("Other Committees Contributions", 6)),
   "abbrev" = c(rep("II", 6), rep("OC", 6)),
@@ -219,19 +206,64 @@ fec_camp_extract <- function(cperson, senID, houseID) {
 }
 
 # ===========================================================================================
+# Prepare the Workstation
+# ===========================================================================================
+
+# set the working directory
+setwd()
+
+# create folders to store downloaded data
+dir.create('Leadership')
+dir.create('Campaign')
+dir.create('Final')
+
+# ===========================================================================================
 # Run the Functions
 # ===========================================================================================
 
-# The function needs two variables to work properly:
+# To run the functions, ensure you have the necessary variables and that your working directory 
+# is located in a container folder. If you're using an instruction-sheet (detailed below)
+# ensure that the sheet is saved in that folder.
+
+# The following is the list of variables necessary to run the functions:
 
 # 1.) cperson: This is just the name of congressperson. This variable is purely aesthetic.
-# 2.) candidateCommitteeId: This is the exact ID of the committee we're pulling files from.
+
+# Specific to the Leadership PAC contribution extract:
+
+# 2.) candCmteNameMn: This is the 
+# 3.) candidateCommitteeId: This is the exact ID of the committee we're pulling files from.
 #     The names for the Leadership PACS can be retreived from: 
 #           https://www.opensecrets.org/pacs/industry.php?txt=Q03&cycle=2016.
 
+# Specific to the Campaign contribution extract:
+
+# 2.) senID: This is the members Senate campaign committee ID. This field can be left blank.
+# 3.) houseID: This is the members House campaign committe ID. This field can be left blank.
+
+# leadership PAC contributions file
+fec_lead_extract("Capito", "Wild and Wonderful", "C00489336")
+
+# campaign committee contributions file
+fec_camp_extract("Collins", "S4WV00159", "H0WV02138")
+
+# ===========================================================================================
+# Optional Instructional CSV
+# ===========================================================================================
+
+# The code below automates the process of pulling multiple sheets at a time by creating a 
+# a document entitled "instructions.csv" with the headers "candidate" (cperson), "lname" 
+# (leadership PAC name), "lID" (leadership PAC ID), "sID" (senate ID), and "hID" (house ID). 
+# The loop runs both functions, allowing individuals to fill in all the necessary information
+# and to let the script automate the rest. Feel free to edit the code below as necessary.
+
+# download instructional csv
 df <- read.csv(file = "instructions.csv", header = TRUE)
+
+# add column names to instructional csv
 colnames(df) <- c("candidate", "lname", "lID", "sID", "hID")
 
+# run loop using instructional csv
 for (i in 1:length(df$candidate)) {
   fec_lead_extract(cperson = df$candidate[i], 
                    candCmteNameMn = df$lname[i], 
@@ -240,7 +272,3 @@ for (i in 1:length(df$candidate)) {
                    senID = as.character(df$sID[i]), 
                    houseID = as.character(df$hID[i]))
 }
-
-fec_lead_extract(cperson = df$candidate[3], 
-                 candCmteNameMn = df$lname[3], 
-                 candidateCommitteeId = df$lID[3])
