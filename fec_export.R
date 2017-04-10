@@ -231,7 +231,7 @@ dir.create('Final')
 
 # Specific to the Leadership PAC contribution extract:
 
-# 2.) candCmteNameMn: This is the 
+# 2.) candCmteNameMn: This is the name of the Leadership PAC. This variable is purely aesthetic.
 # 3.) candidateCommitteeId: This is the exact ID of the committee we're pulling files from.
 #     The names for the Leadership PACS can be retreived from: 
 #           https://www.opensecrets.org/pacs/industry.php?txt=Q03&cycle=2016.
@@ -245,7 +245,7 @@ dir.create('Final')
 fec_lead_extract("Capito", "Wild and Wonderful", "C00489336")
 
 # campaign committee contributions file
-fec_camp_extract("Collins", "S4WV00159", "H0WV02138")
+fec_camp_extract("Capito", "S4WV00159", "H0WV02138")
 
 # ===========================================================================================
 # Optional Instructional CSV
