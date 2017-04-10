@@ -13,7 +13,7 @@
 library(gtools) # needed for smartbind
 
 # load customizable variables
-cperson <- "Cruz" # identify candidate
+cperson <- "Heller" # identify candidate
 setwd() # set the working directory in code
 
 # compile list of csv's to merge
@@ -30,26 +30,11 @@ II <- data.frame()
 
 # merge the files
 for (i in 1:length(files)) {
-   II <- rbind(II, read.csv(files[i]))
+   II <- rbind(II, read.csv(files[i], skip = 7))
 }
-
-# write function that converts currenct format to number format
-currency_number <- function(currency){
-  number <- as.character(currency)
-  number <- sub('\\$','', number)
-  number <- sub('\\.00','', number)
-  number <- sub(',','', number)
-  number <- sub('\\(','-', number)
-  number <- sub('\\)','', number)
-  number <- as.numeric(number)
-  print(number)
-}
-
-# change the format
-II$Amount <- currency_number(II$Amount)
 
 # rename the columns
-colnames(II) <- c("Contributor Name","Employer/Occupation", "City","State","Zip","Receipt Date","Amount","Memo Code", "Description")
+colnames(II) <- c("Contributor Name","Employer","Occupation","Description","City","State","Zip","Receipt Date","Amount","Memo Code","Report Type","Report Year","Image Number","Transaction Code","Other Id","Candidate Id","Transaction PGI")
 
 # ===========================================================================================
 # Export Merged Data Frame
