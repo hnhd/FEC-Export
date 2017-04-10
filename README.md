@@ -7,16 +7,18 @@ This script reduces the time spent sorting through the FEC website GUI, download
 ## Running the Script
 In order to run the script ensure that the the working directory is (1) located in a folder (2) that all required packages have been installed. Once both of those have been established, one should be able to run the script and output the contribution CSV into the respective folder. 
 
-The script writes two function, one called fec_lead_extract() the other fec_camp_extract(). As you might've guessed, the first script is for pulling and merging leadeship PAC contribution data, whereas the second is for pullng and merging campaign committee contribution data. 
+The script writes two functions, one called fec_lead_extract() the other fec_camp_extract(). As you might've guessed, the first script is for pulling and merging leadeship PAC contribution data, whereas the second is for pullng and merging campaign committee contribution data. 
 
 The following variable is needed by both scripts:
 1. **cperson**: This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.
 
 The following variables are specific to fec_lead_extract():
+
 2. **candCmteNameMn**: This is just the name of the Leadership PAC. This variable is used to distinguish leadership PAC data from campaign committee data.
 3. **candidateCommitteeId**: This is the exact ID of the leadership committee we're pulling files from. 
 
 The following variables are specific to fec_camp_extract():
+
 2. **senID**: This is the exact ID of the campaign committee we're pulling files from.
 3. **houseID**: This is the exact ID of the leadership committee we're pulling files from. 
 
