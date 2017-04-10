@@ -1,11 +1,11 @@
 # FEC Contribution Data Download & Merge
-This is a simple script that extracts candidate or leadership PAC "Itemized Individual Contributions" and "Other Campaign Contributions" data from the Federal Election Comission (FEC) between 2008 to 2016 and merges the exports into a singular CSV file to be used for analysis. 
+This is a simple script that extracts candidate or leadership PAC "Itemized Individual Contributions" and "Other Campaign Contributions" data from the Federal Election Comission (FEC) between 2008 to 2018 and merges the exports into a singular CSV file to be used for analysis. 
 
 ## Script Purpose
 This script reduces the time spent sorting through the FEC website GUI, downloading, and merging CSV files. 
 
 ## Running the Script
-In order to run the script ensure that the the working directory is (1) located in a folder (2) that all required packages have been installed. Once both of those have been established, one should be able to run the script and output the contribution CSV into the respective folder. 
+In order to run the script ensure that the the working directory is (1) located in the desired folder (2) that all required packages have been installed. Once both of those have been established, one should be able to run the script and output the contribution CSV into the respective folder. 
 
 The script writes two functions, one called fec_lead_extract() the other fec_camp_extract(). As you might've guessed, the first script is for pulling and merging leadeship PAC contribution data, whereas the second is for pullng and merging campaign committee contribution data. 
 
