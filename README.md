@@ -9,6 +9,8 @@ In order to run the script ensure that the the working directory is (1) located 
 
 The script writes two functions, one called fec_lead_extract() the other fec_camp_extract(). As you might've guessed, the first script is for pulling and merging leadeship PAC contribution data, whereas the second is for pulling and merging campaign committee contribution data. 
 
+### Necessary Fields
+
 The following fields need to be populated to run fec_lead_extract():
 
 |       variable       |                                                                                                              description                                                                                                             |        example       |
@@ -32,6 +34,8 @@ The following fields need to be populated to run fec_camp_extract():
 To run the script to return the aggregated data for Capito's house and senate campaigns, run the following code:
 
 `fec_camp_extract("Capito", "S4WV00159", "H0WV02138")`
+
+### Script Storage Process
 
 The example used in the script is Senator Shelley Moore Capito's Leadership Political Action Committee, WILD & WONDERFUL PAC. The script, when run, should create three folders entitled "Leadership", "Campaign", and "Final". Then, it should create folders within the Leadership and Campaign folders entitled "Capito" where downloaded sheets are stored. After that, the script will merge the downloaded sheets and put the output in the "Finals" folder where they can be used for analysis.
 
