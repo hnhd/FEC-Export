@@ -9,13 +9,13 @@ In order to run the script ensure that the the working directory is (1) located 
 
 The script writes two functions, one called fec_lead_extract() the other fec_camp_extract(). As you might've guessed, the first script is for pulling and merging leadeship PAC contribution data, whereas the second is for pullng and merging campaign committee contribution data. 
 
-The following variable is needed by both scripts:
-1. **cperson**: This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.
+The following fields need to be populated to run fec_lead_extract():
 
-The following variables are specific to fec_lead_extract():
-
-2. **candCmteNameMn**: This is just the name of the Leadership PAC. This variable is used to distinguish leadership PAC data from campaign committee data.
-3. **candidateCommitteeId**: This is the exact ID of the leadership committee we're pulling files from. 
+|       variable       |                                                                         description                                                                        |                  example                  |
+|:--------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------:|
+| cperson              | This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.                                                | 'McCaskill'                               |
+| candCmtNameMn        | This is just the name of the leadership PAC. This variable is used to distinguish leadership PAC data from campaign committee data.                        | 'Missourians for Accountability & Change' |
+| candidateCommitteeId | This is the exact ID of the committee we're pulling files from. IDs can be found [here](https://www.opensecrets.org/pacs/industry.php?txt=Q03&cycle=2016). | 'C00431122'                               |
 
 The following variables are specific to fec_camp_extract():
 
