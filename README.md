@@ -15,9 +15,9 @@ The following fields need to be populated to run fec_lead_extract():
 
 |       variable       |                                                                                                              description                                                                                                             |        example       |
 |:--------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| cperson              | This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.                                                                                                                          | 'Capito'             |
-| candCmtNameMn        | This is just the name of the leadership PAC. This variable is used to distinguish leadership PAC data from campaign committee data. PAC names can be found [here](https://www.opensecrets.org/pacs/industry.php?txt=Q03&cycle=2016). | 'Wild and Wonderful' |
-| candidateCommitteeId | This is the exact ID of the committee we're pulling files from.                                                                                                                                                                      | 'C00489336'          |
+| cperson              | This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.                                                                                                                          | "Capito"             |
+| candCmtNameMn        | This is just the name of the leadership PAC. This variable is used to distinguish leadership PAC data from campaign committee data. PAC names can be found [here](https://www.opensecrets.org/pacs/industry.php?txt=Q03&cycle=2016). | "Wild and Wonderful" |
+| candidateCommitteeId | This is the exact ID of the committee we're pulling files from.                                                                                                                                                                      | "C00489336"          |
 
 To run the script to return the aggregated data for Capito's leadership PAC, run the following code:
 
@@ -27,9 +27,9 @@ The following fields need to be populated to run fec_camp_extract():
 
 | variable |                                                            description                                                           |   example   |
 |:--------:|:--------------------------------------------------------------------------------------------------------------------------------:|:-----------:|
-| cperson  | This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.                      | 'Capito'    |
-| senID    | This is the exact ID of the senate committee we're pulling files from. Only applicable to current or former U.S. senators.       | 'S4WV00159' |
-| houseID  | This is the exact ID of the house committee we're pulling files from. Only applicable to current or former U.S. representatives. | 'H0WV02138' |
+| cperson  | This is just the name of congressperson. This variable is responsible for naming the file and exported CSV.                      | "Capito"    |
+| senID    | This is the exact ID of the senate committee we're pulling files from. Only applicable to current or former U.S. senators.       | "S4WV00159" |
+| houseID  | This is the exact ID of the house committee we're pulling files from. Only applicable to current or former U.S. representatives. | "H0WV02138" |
 
 To run the script to return the aggregated data for Capito's house and senate campaigns, run the following code:
 
