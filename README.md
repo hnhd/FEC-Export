@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # FEC Contribution Data Download & Merge
 This is a simple script that extracts candidate or leadership PAC "Itemized Individual Contributions" and "Other Campaign Contributions" data from the Federal Election Comission (FEC) between 2008 to 2018 and merges the exports into a singular CSV file to be used for analysis. 
 
